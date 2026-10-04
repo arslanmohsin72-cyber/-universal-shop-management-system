@@ -1,0 +1,14 @@
+{
+  "name": "universal-shop-management-system",
+  "version": "1.0.0",
+  "description": "Universal Shop Management System — Full POS (Layered Architecture)",
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "seed": "npm run seed --prefix server",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "test": "npm run test --prefix server",
+    "deploy": "firebase deploy"
+  }
+}

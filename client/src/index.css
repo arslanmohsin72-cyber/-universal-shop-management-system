@@ -1,0 +1,47 @@
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.hover-bg-light:hover {
+  background-color: #f8f9fa;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08) !important;
+  transform: translateY(-2px);
+}
+
+.transition {
+  transition: all 0.2s ease-in-out;
+}
+
+.fw-mono {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Print Styles */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .no-print {
+    display: none !important;
+  }
+  #printableInvoice, #printableInvoice *, #printableReport, #printableReport * {
+    visibility: visible;
+  }
+  #printableInvoice {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  #printableReport {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
